@@ -33,6 +33,13 @@ function API.WriteFile(fileName, content)
 	end
 end
 
+function API.DownloadFile(fileName, URL)
+	local filePath = currentFolder .. "\\" .. fileName
+	if not isfile(filePath) then
+		writefile(filePath, game:HttpGet(URL))
+	end
+end
+
 function API.FileExists(fileName)
 	return isfile(currentFolder .. "\\" .. fileName)
 end
