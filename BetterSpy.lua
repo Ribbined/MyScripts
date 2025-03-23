@@ -1,7 +1,7 @@
 -- open source because original SimpleSpyV3 is open source :)
 -- don't you dare change the text to say you made it :(
 
--- [[ 
+--[[ 
 CHANGES MADE:
 Added support for UnreliableRemoteEvents.
 Added support for buffer library.
