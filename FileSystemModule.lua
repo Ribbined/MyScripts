@@ -6,10 +6,6 @@ local HttpService = game:GetService("HttpService")
 
 local currentFolder = nil
 
-if not isfolder(currentFolder) then
-	makefolder(currentFolder)
-end
-
 function API.SetFolder(folderName)
 	if not isfolder(folderName) then
 		makefolder(folderName)
