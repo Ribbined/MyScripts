@@ -59,7 +59,7 @@ end
 local playTutorialBindable = Instance.new("BindableFunction")
 
 playTutorialBindable.OnInvoke = function()
-    -- GUI setup
+    -- credits to chatgpt for some gui code cuz I rushed as fast as possible to get this out lmao
     local gui = Instance.new("ScreenGui")
     gui.Name = "TutorialGui"
     gui.ResetOnSpawn = false
@@ -87,7 +87,6 @@ playTutorialBindable.OnInvoke = function()
     video:Play()
     video.Ended:Wait()
     video:Destroy()
-    -- End message
     local label = Instance.new("TextLabel")
     label.TextScaled = true
     label.Size = UDim2.new(1, 0, 1, 0)
