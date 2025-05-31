@@ -1,49 +1,11 @@
-local RunService = game:GetService("RunService")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Players = game:GetService("Players")
 
-local localPlayer = Players.LocalPlayer
-
-RunService.Heartbeat:Connect(function()
-    for _, player in ipairs(Players:GetPlayers()) do
-        if player ~= localPlayer then
-            local character = player.Character
-            if character then
-                local tool = character:FindFirstChildOfClass("Tool")
-                if tool then
-                    ReplicatedStorage:WaitForChild("GameEvents"):WaitForChild("SellPet_RE"):FireServer(tool)
-                end
-            end
-        end
-    end
-end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Grow a garden Money Dupe - Made by Ribbined!";
     Text = "Discord invite copied to clipboard 😎 PLEASE JOIN WE ALMOST GOT 1K MEMBERS!!";
-    Duration = 15;
+    Duration = 4;
 })
 toclipboard("https://discord.gg/5nWJ8ZMaXk")
-
-local url = "https://github.com/CorpseCMD/MyScripts/raw/refs/heads/main/tutorial%20(online-video-cutter.com).mp4"
-local filename = "ribbined_GrowAGardenScriptTutorial1.mp4"
-
-if not isfile(filename) then
-    local request = syn and syn.request or http_request
-    local result = request({
-        Url = url,
-        Method = "GET"
-    })
-    writefile(filename, result.Body)
-end
-
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Grow a garden Money Dupe - Made by Ribbined!";
-    Text = "Discord invite copied to clipboard 😎 PLEASE JOIN WE ALMOST GOT 1K MEMBERS!!";
-    Duration = 15;
-})
-toclipboard("https://discord.gg/5nWJ8ZMaXk")
-
 local url = "https://github.com/CorpseCMD/MyScripts/raw/refs/heads/main/tutorial%20(online-video-cutter.com).mp4"
 local filename = "ribbined_GrowAGardenScriptTutorial1.mp4"
 
@@ -107,8 +69,13 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "How to use",
     Text = "Click 'Play' to watch the tutorial in game!",
-    Duration = 10,
+    Duration = 5,
     Button1 = "Play",
     Callback = playTutorialBindable
 })
 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "UPDATE PATCHED IT";
+    Text = "THIS SCRIPT IS PATCHED mega sad :(";
+    Duration = 15;
+})
