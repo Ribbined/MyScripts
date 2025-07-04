@@ -7,4 +7,4 @@ local function check(c)
     end
 end
 parent.ChildAdded:Connect(check)
-for _,c in parent do check(c) end
+for _,c in parent:GetChildren() do check(c) end
