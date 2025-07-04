@@ -1,7 +1,21 @@
 -- no steal pls 🙏
+if os.time() > os.time({year = 2025, month = 7, day = 10}) then 
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "This script is discontinued",
+        Text = "Sorry :( | Join my discord for other scripts though! I'm sorry that it's being discontinued but I no longer want to keep making this lol.",
+        Duration = 5
+    })
+    task.wait(1.5)
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Alert",
+        Text = "The old script will load in 10 seconds although beware that the game's anticheat could've updated a lot! Leave before it loads or you risk being detected by anticheat.",
+        Duration = 5
+    })
+    task.wait(10)
+end
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "This script is being discontinued on 7/10/2025",
-    Text = "Sorry :( | Join my discord for other scripts tho :D",
+    Text = "Sorry :( | Join my discord for other scripts tho :D. The key is \"anticheatGotNothinOnMoneyAhh\" the channel in my dsc was deleted for it, please join still though :)",
     Duration = 25
 })
 task.wait(0.75)
