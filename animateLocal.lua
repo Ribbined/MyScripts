@@ -1,4 +1,4 @@
--- property of roblox ig except for the few lines i changed
+-- made by roblox ig except for the few lines i changed
 local Figure = _G.Figure
 local Torso = Figure:WaitForChild("Torso")
 local RightShoulder = Torso:WaitForChild("Right Shoulder")
